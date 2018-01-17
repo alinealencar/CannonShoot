@@ -20,6 +20,7 @@ public class CannonBallScript : MonoBehaviour {
 			Debug.Log ("hit the rock");
 			Destroy (gameObject);
 			Destroy (other.gameObject);
+			Player.Instance.Score += 100;
 		}
 	}
 
