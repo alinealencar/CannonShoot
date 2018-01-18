@@ -27,13 +27,6 @@ public class UIController : MonoBehaviour {
 		scoreLabel.text = "Points: " + Player.Instance.Score;
 	}
 
-//	/* This method updates the life status in the UI. */
-//	public void UpdateLifeUI(){
-//		if (Player.Instance.Score == 5){
-//			GameOver ();
-//		} 
-//	}
-
 	// Use this for initialization
 	void Start () {
 		//The game does not change its status. Character cannot be moved.
@@ -43,21 +36,6 @@ public class UIController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		
 	}
-
-//	/* This method starts/restarts the game when the user clicks on the play button. */
-//	public void PlayBtnClick(){
-//		SceneManager.
-//		LoadScene (
-//			SceneManager.GetActiveScene ().name);
-//	}
-//
-//	public void StartGameClick(){
-//		//Hide the start screen UI elements
-//		startBtn.gameObject.SetActive (false);
-//		titlelbl.gameObject.SetActive (false);
-//		introlbl.gameObject.SetActive (false);
-//		//Make the game playable again
-//		Time.timeScale = 1;
-//	}
 }

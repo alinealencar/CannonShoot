@@ -32,14 +32,14 @@ public class CannonBallShoot : MonoBehaviour {
 		
 		_rb = p.GetComponent<Rigidbody2D> ();
 
-//		Physics2D.IgnoreCollision (
-//			gameObject.GetComponent<Collider2D> (),
-//			p.GetComponent<Collider2D> ());
-//		
+		Physics2D.IgnoreCollision (
+			gameObject.GetComponent<Collider2D> (),
+			p.GetComponent<Collider2D> ());
+		
 		_rb.AddForce (_transform.right
 			* projectileForce
 			*_transform.localScale.x);
 		
-//		p.transform.localScale = _transform.localScale;
+		p.transform.localScale = _transform.localScale;
 	}
 }
