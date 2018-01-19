@@ -182,48 +182,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 263013473}
---- !u!1001 &445036952
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.212835
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 4.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4602825446961694, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: adeeb6e7dcfa149ed993f0169332e768, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &467118542
 Prefab:
   m_ObjectHideFlags: 0
@@ -431,7 +389,7 @@ RectTransform:
   m_Children:
   - {fileID: 263013474}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -541,6 +499,7 @@ GameObject:
   - component: {fileID: 808705288}
   - component: {fileID: 808705290}
   - component: {fileID: 808705291}
+  - component: {fileID: 808705292}
   m_Layer: 0
   m_Name: cannon
   m_TagString: Untagged
@@ -580,7 +539,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 04fb47700d0fe426c9f97805c8811c4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 07f6fad3ee28c4ead8e6dcdd3eedbd08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -597,11 +556,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808705284}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.58, y: -0.12, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_LocalPosition: {x: -8.07, y: -0.12, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &808705287
 Rigidbody2D:
@@ -664,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 1299137811347538, guid: 523652e7aba614c68b63611b36adad68, type: 2}
-  projectileForce: 3000
+  projectileForce: 2000
   spawn: {fileID: 0}
 --- !u!114 &808705291
 MonoBehaviour:
@@ -678,6 +637,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreLabel: {fileID: 263013475}
+--- !u!95 &808705292
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 808705284}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b49f0c21e3424ab381165dfbaa61aa8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &875731285
 Prefab:
   m_ObjectHideFlags: 0
@@ -798,7 +774,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1672776704
 Prefab:
